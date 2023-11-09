@@ -20,6 +20,8 @@ model Issue {
   updatedAt        DateTime @updatedAt
   assignedToUserId String?  @db.VarChar(255)
   assignedToUser   User?    @relation(fields: [assignedToUserId], references: [id])
+
+  @@index([assignedToUserId], name: "assignedToUserId_index") // Add this line to create an index
 }
 
 enum Status {
@@ -44,6 +46,7 @@ model Account {
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
+  @@index([userId], name: "userId_index") // Add this line to create an index
   @@unique([provider, providerAccountId])
 }
 
