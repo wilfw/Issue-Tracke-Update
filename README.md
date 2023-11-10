@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is  a modern, full-stack, production-grade issue tracker with Next.js (app router), Tailwind, Radix UI, Prisma, and MySQL. 
+
 
 ## Getting Started follow these steps:
 
